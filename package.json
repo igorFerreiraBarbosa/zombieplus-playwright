@@ -1,0 +1,16 @@
+{
+  "name": "playwrightzombie",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.7.0",
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1",
+    "pg": "^8.15.1"
+  }
+}
