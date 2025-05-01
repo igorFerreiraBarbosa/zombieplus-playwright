@@ -29,4 +29,4 @@ npx playwright show-report
 ```
 
 <hr>
-Curso disponível em https://qaxperience.com
+Curso disponível em https://www.udemy.com/course/playwright-zombie/

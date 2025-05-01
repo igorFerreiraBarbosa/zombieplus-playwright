@@ -4,7 +4,7 @@ test('deve logar como administrador', async ({ page }) => {
   
   await page.login.visit()
   await page.login.login('admin@zombieplus.com', 'pwd123')
-  await page.movies.isLoggedIn()
+  await page.login.isLoggedIn('Admin')
   
 })
 
@@ -12,8 +12,8 @@ test('não deve logar com senha incorreta', async ({ page }) => {
   
   await page.login.visit()
   await page.login.login('admin@zombieplus.com', '123')
-  const toastMessage = 'Oops!Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente.'
-  await page.toast.containText(toastMessage)
+  const toastMessage = 'Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente.'
+  await page.popup.haveText(toastMessage)
 
 })
 
